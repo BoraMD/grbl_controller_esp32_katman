@@ -19,7 +19,8 @@
 
 // Only ONE line below should be uncommented.  Add extra lines and files as needed.
 
-#include "User_Setup.h"           // Default setup is root library folder
+//#include "User_Setup.h"           // Default setup is root library folder
+//#include "Setup113_ILI9488esp.h"    // Benim setup
 
 //#include <User_Setups/Setup1_ILI9341.h>  // Setup file configured for my ILI9341
 //#include <User_Setups/Setup2_ST7735.h>   // Setup file configured for my ST7735
@@ -77,6 +78,8 @@
 //#include <User_Setups/Setup50_SSD1963_Parallel.h>  // Setup file for ESP32 and SSD1963 TFT display
 
 //#include <User_Setups/Setup135_ST7789.h>           // Setup file for ESP8266 and ST7789 135 x 240 TFT
+
+#include "User_Setups/Setup113_ILI9488esp.h"           // Benim eklediğim setup dosyası
 
 //#include <User_Setups/Setup136_LilyGo_TTV.h>       // Setup file for ESP32 and Lilygo TTV ST7789 SPI bus TFT  135x240
 
@@ -149,7 +152,7 @@
      #include <TFT_Drivers/ILI9481_Defines.h>
      #define  TFT_DRIVER 0x9481
 #elif defined (ILI9488_DRIVER)
-     #include <TFT_Drivers/ILI9488_Defines.h>
+     #include "TFT_Drivers/ILI9488_Defines.h"
      #define  TFT_DRIVER 0x9488
 #elif defined (HX8357D_DRIVER)
      #include "TFT_Drivers/HX8357D_Defines.h"

@@ -578,14 +578,15 @@ void clearScreen() {
   tft.fillScreen( SCREEN_BACKGROUND ) ;
 }
 
+//Boot ekranında yazanları değiştirmek için burayı değiştir logo vs
 void drawLogo() {
-  tft.drawBitmap(( hCoord(320)-130) /2 , vCoord(20), logoIcon , 130, 118 , BUTTON_BACKGROUND );
+  tft.drawBitmap(( hCoord(320)-130) /2 , vCoord(20), kcncIcon , 130, 118 , BUTTON_BACKGROUND );
   tft.setTextFont( 2 ); // use Font2 = 16 pixel X 7 probably
   tft.setTextColor(TFT_GREEN ,  TFT_BLACK) ; // when oly 1 parameter, background = fond);
   tft.setTextSize(1) ;           // char is 2 X magnified => 
   tft.setTextDatum( TC_DATUM ) ; // align center
-  tft.drawString( "Developped by mstrens & HTheatre for MakerFr" , hCoord(160) , vCoord(180) ) ;     // affiche un texte
-  tft.drawString( "www.makerfr.com" , hCoord(160) , vCoord(200) ) ;
+  tft.drawString( "Kolay CNC" , hCoord(160) , vCoord(180) ) ;     // affiche un texte
+  tft.drawString( "www.ne-ka.com" , hCoord(160) , vCoord(200) ) ;
   tft.drawString( VERSION_TEXT , hCoord(160) , vCoord(220) ) ; 
 }
 

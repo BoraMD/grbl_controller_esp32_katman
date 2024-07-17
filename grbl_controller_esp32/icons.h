@@ -5,6 +5,14 @@
 
 #if defined( TFT_SIZE) and (TFT_SIZE == 3)
 
+const uint8_t kcncIcon[] = {
+#include "icons/bmp74/kolaycnc_siyahlogo_isimsiz.h"  
+};
+
+const uint8_t nekaIcon[] = {
+#include "icons/bmp74/neka.h"  
+};
+
 const uint8_t logoIcon[] = {
 #include "icons/bmp74/logo.h"  
 };
